@@ -17,11 +17,11 @@ while (i < Num)
 }
 
 int Sum = 0;
-i = 0;
-while (i < (Array.Length-i-1))
+int j = 0;
+while (j < (Array.Length-j-1))
 {
-    Sum = Sum + Array[i] * (Array.Length-i-1);
-    i++;
+    Sum = Sum + Array[j] * Array[Array.Length-j-1];
+    j++;
 }
 Console.WriteLine(" ");
 Console.WriteLine("Сумма произведений пар чисел массива: " + Sum);
