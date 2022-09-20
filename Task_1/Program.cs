@@ -8,15 +8,18 @@
 Console.Clear();
 int i = 0;
 int Sum = 0;
-int[] Array = new int[999]; 
-Console.WriteLine("Введите пять натуральных чисел: ");
 
-while (i< 5)
+Console.WriteLine("Введите натуральное число: ");
+int num1 = Convert.ToInt32(Console.ReadLine());
+int[] Array = new int[num1];
+Console.WriteLine("Введите числа: ");
+
+while (i< num1)
 {
-    int Num = Convert.ToInt32(Console.ReadLine());
-    Array[i] = Num;
+    int num2 = Convert.ToInt32(Console.ReadLine());
+    Array[i] = num2;
     if (Array[i] > 0)
-            Sum = Sum + Array[i];
+            Sum = Sum + 1;
     i++;
 }
 
